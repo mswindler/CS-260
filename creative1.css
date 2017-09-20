@@ -3,6 +3,18 @@ div {
   width:75%!important;
 }
 
+.carousel-inner {
+  width:100%!important; 
+}
+
+img#kara {
+  border-radius:75px;
+}
+
+img#matt {
+  border-radius:50px;
+}
+
 h1, h2, p {
   text-align:center;
   font-family:"Arial",Sans-serif
