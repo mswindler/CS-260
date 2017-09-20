@@ -1,0 +1,62 @@
+div {
+  margin:auto!important;
+  width:75%!important;
+}
+
+h1, h2, p {
+  text-align:center;
+  font-family:"Arial",Sans-serif
+}
+
+.t1,.t2,.t3,.t4 {
+    font-family:"handwritten",cursive;
+font-style:italic;
+}
+
+.big-text {
+  font-size:40px!important;
+  color:#8a1f00;
+}
+
+.t4 {
+  font-size:30px;
+}
+
+.t1 {
+  font-size:20px;
+}
+
+.t2, .t3 {
+  font-size:15px;
+}
+
+hr {
+  height:2px!important;
+  border:none;
+  background-color:#3d3d3d;
+  width:75%!important;
+}
+
+#title, #testimonials, #about-us, #footer {
+  padding:25px;  
+}
+
+.what-people-say {
+  padding-bottom: 45px;
+}
+
+#testimonials {
+  padding:50px;
+}
+
+p {
+  margin:auto;
+}
+
+#who-we-are td {
+  padding:20px;
+}
+
+#who-we-are {
+  border-spacing: 5px;
+}
