@@ -19,7 +19,3 @@ function changeImageTwo() {
       document.querySelector('#matt').src = 'https://scontent-sjc2-1.xx.fbcdn.net/v/t31.0-8/20157915_10213783254478710_1713232044203715912_o.jpg?oh=4888134a88db9f7d89c005a17ad6a24f&oe=5A4B1518';
     }
 }
-
-$(".t1, .t2, .t3, .t4").hover(function () {
-    $(this).toggleClass("big-text");
-});
