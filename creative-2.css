@@ -19,6 +19,10 @@ button#myButton {
     text-align:center;
     margin:auto;
 }
+
+#footer{
+    height:500px;
+}
     hr {
       border-width: 2px;
       border-style: solid;
