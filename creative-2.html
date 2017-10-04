@@ -6,11 +6,18 @@
 <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script>
  $(document).ready(function(){
+  function scrollTo(id){
+      // Scroll
+    $('html,body').animate({
+        scrollTop: $("#myDiv").offset().top},
+        'slow');
+}
   
-  $('#myButton').click(function() {
+  $('#myButton').click(function(e) {
    //optionally remove the 500 (which is time in milliseconds) of the
    //scrolling animation to remove the animation and make it instant
-   $.scrollTo($('#myDiv'), 500);
+   e.preventDefault();
+   $.scrollTo(this.id);
 });
   
  $("#searchButton").click(function(f){
