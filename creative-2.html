@@ -6,6 +6,13 @@
 <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script>
  $(document).ready(function(){
+  
+  $('#myButton').click(function() {
+   //optionally remove the 500 (which is time in milliseconds) of the
+   //scrolling animation to remove the animation and make it instant
+   $.scrollTo($('#myDiv'), 500);
+});
+  
  $("#searchButton").click(function(f){
   var keyword = $("#searchStack").val();
    var address = $("#cityField").val();
@@ -61,6 +68,8 @@
 <body>
   <div id="content">
   <h2>Event Finder</h2>
+   <button id="myButton">
+   <div id="myDiv">
 <form class="form">
 Enter a City: <input type="text" placeholder="Enter City" id="cityField" value=""><br>
 Enter A Keyword: <input type="text" id="searchStack" placeholder="Keyword" value=""><br>
@@ -69,5 +78,6 @@ Enter A Keyword: <input type="text" id="searchStack" placeholder="Keyword" value
 <h4 class="events">Events</h4>
   <div id="searchResults">No Results</div>
   </div>
+ </div>
 </body>
 </html>
