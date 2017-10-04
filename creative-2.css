@@ -7,18 +7,13 @@
     hr {
       border-width: 2px;
       border-style: solid;
-      border-color: cyan;
+      border-color: grey;
     }
-    div#searchResults div:hover {
-      background-color: #00e2ff;
-      padding: 3px;
-      font-size: larger;
-    }
-    input#weatherButton:hover, input#searchButton:hover {
-      background-color: cyan;
+    input#searchButton:hover {
+      background-color: lightgray;
     }
     input:active, input:focus {
-      background-color: cyan;
+      background-color: grey;
     }
     input {
       border-radius: 5px;
