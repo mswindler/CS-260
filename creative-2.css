@@ -4,6 +4,10 @@
     input#searchStack, input#cityField {
       border-style: solid;
     }
+img {
+    margin:auto;
+    display:block;
+}
 button#myButton {
     border: #000;
     border-width: 4px;
