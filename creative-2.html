@@ -31,11 +31,12 @@
             var freedomMurica = parsed_json['events'][i]['is_free'];
             everything += "<div><h3>" + '<a href="' + link + '">' + title + "</a>" + "</h3>";
             everything += "<p>Description: " + description + "</p></div>";
-            console.log(date.toDateString() + "\n" + date.getHours() + ":" + date.getMinutes());
+            
+            everything += "<p>Time: " + date.toDateString() + "\n" + date.getHours() + ":" + date.getMinutes();
            if(date.getMinutes() == 0){
-            console.log("0");
+            everything += "0";
            }
-            everything += "<p>Time: " + start + "</p></div>";
+           everything += "</p></div>";
            if(freedomMurica){
             everything += "<p>Tis' Free</p>";
            } else {
