@@ -24,7 +24,7 @@
   var keyword = $("#searchStack").val();
    var address = $("#cityField").val();
   f.preventDefault();
-    $("#searchResults").html('<img src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp">');
+    $("#searchResults").html('<img src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp" height=300 width=300>');
        
       var myurl= "https://www.eventbriteapi.com/v3/events/search/?token=AXOHW3N4P3IL6NMW36FP&q=";
       myurl += keyword;
@@ -36,7 +36,17 @@
         dataType : "json",
         success : function(parsed_json) {
           everything = "";
-          for (var i = 0; i < 10; i++) {
+          var numEvents = parsed_json['pagination']['object_count'];
+         
+           if(numEvents == 0) {
+               everything = "<div><h3>Sorry, no results. Your town is lame.</h3></div>";
+           }
+           if(numEvents > 25) {
+             numEvents = 25;
+           }
+         console.log(everything);
+
+          for (var i = 0; i < numEvents; i++) {
             var title = parsed_json['events'][i]['name']['text'];
             var description = parsed_json['events'][i]['description']['text'];
             var link = parsed_json['events'][i]['url'];
@@ -65,11 +75,7 @@
               everything += "<hr><br>";
             }
           }
-                    if(everything == "") {
-            everything = "<div><h3>Sorry, no results. Your town is lame.</h3></div>";
-           }
-         console.log(everything);
-            $("#searchResults").html(everything);
+          $("#searchResults").html(everything);
         }
       });
  });
