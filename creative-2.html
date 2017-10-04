@@ -37,11 +37,11 @@
             hour = hour - 12;
             t = "PM";
            }
-            everything += "<p>Time: " + date.toDateString() + "\n" + hour + ":" + date.getMinutes() + t;
+            everything += "<p>Time: " + date.toDateString() + "\n" + hour + ":" + date.getMinutes();
            if(date.getMinutes() == 0){
             everything += "0";
            }
-           everything += "</p></div>";
+           everything += t+"</p></div>";
            if(freedomMurica){
             everything += "<p>Tis' Free</p>";
            } else {
