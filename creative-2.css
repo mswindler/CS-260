@@ -4,6 +4,21 @@
     input#searchStack, input#cityField {
       border-style: solid;
     }
+button#myButton {
+    border: #000;
+    border-width: 4px;
+    border-style: solid;
+    background: white;
+    color: red;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+}
+#btn {
+    text-align:center;
+    margin:auto;
+}
     hr {
       border-width: 2px;
       border-style: solid;
