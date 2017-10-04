@@ -7,3 +7,5 @@ Key: 5SJLIYN3GXL7FWSSQP
  /     \
 |      |____________| |_| |
  \____/----------------------
+
+This is the URL: https://www.eventbriteapi.com/v3/events/search/?token=MYTOKEN&otherParams
