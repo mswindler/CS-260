@@ -23,6 +23,8 @@ h4.events {
     padding: 20px;
     font-size: 5em;
     text-transform: uppercase;
+        text-shadow: -5px -5px 0 #f00, 0px 0px 0 #000, 0px 0px 0 #000, 5px 5px 0 #00ff1f;
+    color: transparent;
 }
 form.form {
     margin: auto;
@@ -37,7 +39,7 @@ form.form {
     }
     h2 {
       padding:30px;
-      font-size: 24em;
+      font-size: 20em;
       margin: auto;
       color: transparent;
       text-align: center;
