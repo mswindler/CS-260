@@ -21,7 +21,9 @@ button#myButton {
     text-align:center;
     margin:auto;
 }
-
+button#myButton:active, button#myButton:focus, button#myButton:hover {
+    background: lightgray;
+}
 #footer{
     margin-top:300px;
     height:100px;
