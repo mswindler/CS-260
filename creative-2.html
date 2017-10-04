@@ -31,8 +31,13 @@
             var freedomMurica = parsed_json['events'][i]['is_free'];
             everything += "<div><h3>" + '<a href="' + link + '">' + title + "</a>" + "</h3>";
             everything += "<p>Description: " + description + "</p></div>";
-            
-            everything += "<p>Time: " + date.toDateString() + "\n" + date.getHours() + ":" + date.getMinutes();
+            var t = "AM";
+           var hour = date.getHours();
+           if(hour >= 13){
+            hour = hour - 12;
+            t = "PM";
+           }
+            everything += "<p>Time: " + date.toDateString() + "\n" + hour + ":" + date.getMinutes() + t;
            if(date.getMinutes() == 0){
             everything += "0";
            }
