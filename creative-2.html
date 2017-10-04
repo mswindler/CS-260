@@ -43,9 +43,6 @@
             var start = parsed_json['events'][i]['start']['local'];
             var date = new Date(start);
             var freedomMurica = parsed_json['events'][i]['is_free'];
-           if(title == NULL) {
-            everything = "<div><h3>Sorry, no results. Your town is lame.</h3></div>";
-           }
             everything += "<div><h3>" + '<a href="' + link + '">' + title + "</a>" + "</h3>";
             everything += "<p>Description: " + description + "</p></div>";
             var t = "AM";
@@ -68,6 +65,9 @@
               everything += "<hr><br>";
             }
           }
+                    if(everything == "") {
+            everything = "<div><h3>Sorry, no results. Your town is lame.</h3></div>";
+           }
             $("#searchResults").html(everything);
         }
       });
