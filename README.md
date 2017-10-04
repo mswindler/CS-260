@@ -11,3 +11,7 @@ OAuth: AXOHW3N4P3IL6NMW36FP
  \____/----------------------
 
 This is the URL: https://www.eventbriteapi.com/v3/events/search/?token=AXOHW3N4P3IL6NMW36FP&otherParams
+
+Parameters we need to pass in:
+q=myParam: keywords
+location.address=myParam: address
