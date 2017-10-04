@@ -21,6 +21,15 @@ button#myButton {
     text-align:center;
     margin:auto;
 }
+div#bg-top {
+    padding: 400;
+    background: rgba(0, 1, 23, 0.81);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
 button#myButton:active, button#myButton:focus, button#myButton:hover {
     background: lightgray;
 }
