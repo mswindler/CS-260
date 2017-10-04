@@ -27,9 +27,11 @@
             var description = parsed_json['events'][i]['description']['text'];
             var link = parsed_json['events'][i]['url'];
             var start = parsed_json['events'][i]['start']['local'];
+            var date = new Date(start);
             var freedomMurica = parsed_json['events'][i]['is_free'];
             everything += "<div><h3>" + '<a href="' + link + '">' + title + "</a>" + "</h3>";
             everything += "<p>Description: " + description + "</p></div>";
+            console.log(date);
             everything += "<p>Time: " + start + "</p></div>";
            if(freedomMurica){
             everything += "<p>Tis' Free</p>";
