@@ -23,7 +23,8 @@ button#myButton {
 }
 
 #footer{
-    height:500px;
+    margin-top:300px;
+    height:100px;
 }
     hr {
       border-width: 2px;
