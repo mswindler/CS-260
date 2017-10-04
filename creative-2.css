@@ -29,9 +29,6 @@
       margin:auto;
       width:85%;
       font-family:"Arial",sans-serif;
-      border-width: 2px;
-      border: #00e2ff;
-      border-style: double;
       padding: 20px;
     }
     div#searchResults {
