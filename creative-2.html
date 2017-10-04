@@ -20,12 +20,19 @@
         success : function(parsed_json) {
           everything = "";
           for (var i = 0; i < 10; i++) {
-            var title = parsed_json['items'][i]['title'];
-            var owner = parsed_json['items'][i]['owner']['display_name'];
-            var link = parsed_json['items'][i]['link'];
-            var authorLink = parsed_json['items'][i]['owner']['link'];
-            everything += "<div><h3>" + '<a href="' + link + '">' + title + "</a>" + "</h2>";
-            everything += "<p>Author: " + '<a href="' + authorLink + '">' + owner + "</a>" + "</p></div>";
+            var title = parsed_json['events'][i]['name']['text'];
+            var description = parsed_json['events'][i]['description']['text'];
+            var link = parsed_json['events'][i]['url'];
+            var start = parsed_json['events'][i]['start']['local'];
+            var freedomMurica = parsed_json['events'][i]['is_free'];
+            everything += "<div><h3>" + '<a href="' + link + '">' + title + "</a>" + "</h3>";
+            everything += "<p>Description: " + description + "</p></div>";
+            everything += "<p>Time: " + start + "</p></div>";
+           if(freedomMurica){
+            everything += "<p>Tis' Free</p>";
+           } else {
+            everything += "<p>Tis' Costly. Bring yo money!</p>";
+           }
             if (i != 9) {
               everything += "<hr><br>";
             }
@@ -43,20 +50,10 @@
   <h2>Event Finder</h2>
 <form>
 Enter a City: <input type="text" placeholder="Saint George" id="cityField" value=""><br>
-Suggestion: <span id="txtHint">Empty</span>
-<input id="weatherButton" type="submit" value="Submit">
-</form>
-<p>City</p>
-<textarea readonly="readonly" id="displayCity">No City</textarea>
-<p>Current Weather</p>
-<div id="weather">No weather</div>
-  
-  <h2>Stack Exchange Search</h2>
-  <form>
 Enter A Keyword: <input type="text" id="searchStack" placeholder="Javascript..." value=""><br>
 <input id="searchButton" type="submit" value="Submit">
 </form>
-<p>Stack exchange results</p>
+<p>Events</p>
   <div id="searchResults">No Results</div>
   </div>
 </body>
