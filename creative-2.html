@@ -45,7 +45,10 @@
            if(numEvents > 25) {
              numEvents = 25;
            }
-         console.log(everything);
+         
+           if(numEvents == 0) {
+            everything = "<div><h3 class='error-message'>Sorry, no results. Your town is lame.</h3></div>";
+           }
 
           for (var i = 0; i < numEvents; i++) {
             var title = parsed_json['events'][i]['name']['text'];
