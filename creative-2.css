@@ -8,6 +8,9 @@ img {
     margin:auto;
     display:block;
 }
+errorMessage {
+    text-align:center;
+}
 button#myButton {
     border: #000;
     border-width: 4px;
