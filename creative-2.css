@@ -8,8 +8,8 @@ img {
     margin:auto;
     display:block;
 }
-.error-message {
-    text-align:center;
+h3.error-message {
+    text-align: center;
 }
 button#myButton {
     border: #000;
