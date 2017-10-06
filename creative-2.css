@@ -8,6 +8,12 @@ img {
     margin:auto;
     display:block;
 }
+.free {
+    color:green;
+}
+.paid {
+    color:red;
+}
 h3.error-message {
     text-align: center;
 }
