@@ -43,7 +43,7 @@ div#bg-top {
     width: 100%;
     z-index: -1;
 }
-button#myButton:active, button#myButton:focus, button#myButton:hover {
+.my-button:active, .my-button:focus, .my-button:hover {
     background: lightgray;
 }
 #footer{
