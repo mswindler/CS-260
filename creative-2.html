@@ -35,7 +35,7 @@
         url : myurl,
         dataType : "json",
         error : function() {
-           everything = "<div><h3 class='error-message'>Sorry, no results. Your town is lame.</h3></div>";
+           everything = "<div><h3 class='error-message'>That's not a real location! Try again.</h3></div>";
            $("#searchResults").html(everything);
         },
         success : function(parsed_json) {
@@ -71,9 +71,9 @@
            }
            everything += t+"</p></div>";
            if(freedomMurica){
-            everything += "<p>Tis' Free</p>";
+            everything += "<p class='free'>Tis' Free</p>";
            } else {
-            everything += "<p>Tis' Costly. Bring yo money!</p>";
+            everything += "<p class='paid'>Tis' Costly. Bring yo money!</p>";
            }
             if (i != 9) {
               everything += "<hr><br>";
