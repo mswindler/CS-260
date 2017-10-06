@@ -17,7 +17,7 @@ img {
 h3.error-message {
     text-align: center;
 }
-button#myButton {
+.my-button {
     border: #000;
     border-width: 4px;
     border-style: solid;
@@ -30,7 +30,7 @@ button#myButton {
     margin-bottom: 150px;
     text-shadow: 0px 0px 0 #f00, 0px 0px 0 #000, 0px 0px 0 #000, 3px 3px 0 #00ff1f;
 }
-#btn {
+.btn {
     text-align:center;
     margin:auto;
 }
