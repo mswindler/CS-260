@@ -20,6 +20,13 @@
    scrollTo(this.id);
 });
   
+    $('#myButton2').click(function(e) {
+   //optionally remove the 500 (which is time in milliseconds) of the
+   //scrolling animation to remove the animation and make it instant
+   e.preventDefault();
+   scrollTo(this.id);
+});
+  
  $("#searchButton").click(function(f){
   var keyword = $("#searchStack").val();
    var address = $("#cityField").val();
@@ -90,8 +97,8 @@
  <div id="bg-top"></div>
   <div id="content">
   <h2>Event Finder</h2>
-   <div id="btn">
-   <button id="myButton">Let's Go!</button>
+   <div id="btn" class="btn">
+   <button id="myButton" class="my-button">Let's Go!</button>
    </div>
    <div id="myDiv">
 <form class="form">
@@ -102,6 +109,9 @@ Enter a Search Term: <input type="text" id="searchStack" placeholder="Keyword" v
 <h4 class="events">Events</h4>
   <div id="searchResults"></div>
   </div>
+   <div id="btn2" class="btn">
+   <button id="myButton2" class="my-button">Search again...</button>
+   </div>
  </div>
  <div id="footer">
   <p>Copyright 2019</p>
