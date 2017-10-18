@@ -6,9 +6,14 @@
   <body>
     
     <div class="page-layout" ng-app="">
-      <input type="text" value="Classes" ng-model="formInput" />
-      <form>
-        
+      <input type="text" placeholder="Classes" ng-model="formInput" />
+      <form class="{{formInput}}">
+        <legend>Personal information:</legend>
+        First name:<br>
+        <input type="text" name="firstname" value="Mickey"><br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse"><br><br>
+        <input type="submit" value="Submit">
       </form>
     </div>
     
