@@ -5,10 +5,10 @@
     <link rel="stylesheet" type="text/css" href="creative-3.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
-  <body>
+  <body ng-app="">
     
     <!-- FORM -->
-    <div class="page-layout" ng-app="">
+    <div class="page-layout">
       <input type="text" placeholder="Bootstrap Class" ng-model="formInput" />
       <form class="{{formInput}}">
         <legend>Personal information:</legend>
@@ -21,7 +21,7 @@
     </div>
     
     <!-- REORDER HTML -->
-    <div class="page-layout right" ng-app="">
+    <div class="page-layout right">
         <input type="text" placeholder="Your Bootstrap class here..." ng-model="elementLayout" />
         <div class="{{elementLayout}}">
           <p>This is a paragraph</p>
@@ -39,7 +39,7 @@
     </div>
     
     <!-- TABLE -->
-    <div class="page-layout" ng-app="">
+    <div class="page-layout">
       <table>
         <tr>
           <th>Firstname</th>
