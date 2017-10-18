@@ -22,25 +22,20 @@
     
     <!-- REORDER HTML -->
     <div class="page-layout right">
-        <input type="text" placeholder="Your Bootstrap class here..." ng-model="elementLayout" />
+        <input type="text" placeholder="Your Bootstrap class here..." ng-model="elementLayout" width=150 />
+        <input type="text" placeholder="Your Bootstrap img class here..." ng-model="imgClass" />
         <div class="{{elementLayout}}">
           <p>This is a paragraph</p>
-        </div>
-        <div class="{{elementLayout}}">
           <h3>This is a heading</h3>
-        </div>
-        <div class="{{elementLayout}}">
           <label for="sample-field">Single Line Text</label>
           <input id="sample-field" type="text" value="I am sample text">
-        </div>
-        <div class="{{elementLayout}}">
-          <img src="https://vignette.wikia.nocookie.net/avatar/images/f/f0/Iroh%27s_lotus_tile.png/revision/latest/scale-to-width-down/200?cb=20140112225732" height=150 width=200>
+          <img class="{{imgClass}}" src="https://vignette.wikia.nocookie.net/avatar/images/f/f0/Iroh%27s_lotus_tile.png/revision/latest/scale-to-width-down/200?cb=20140112225732" height=150 width=200>
         </div>
     </div>
     
     <!-- TABLE -->
     <div class="page-layout">
-      <input type="text" placeholder="Your Bootstrap class here..." ng-model="tableInput" />
+      <input type="text" value="table" ng-model="tableInput" />
       <table class="{{tableInput}}">
         <tr>
           <th>Firstname</th>
@@ -62,8 +57,8 @@
     
     <!-- NAV -->
     <div class="page-layout right">
-      <input type="text" placeholder="Your Bootstrap class here..." ng-model="navInput" />
-      <nav class="navbar navbar-default {{navInput}}">
+      <input type="text" placeholder="Your Bootstrap class here..." value="navbar navbar-default" ng-model="navInput" />
+      <nav class="{{navInput}}">
        <div class="container-fluid">
          <!-- Brand and toggle get grouped for better mobile display -->
          <div class="navbar-header">
