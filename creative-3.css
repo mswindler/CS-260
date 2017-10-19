@@ -28,5 +28,5 @@ header {
 }
 
 .ourTable {
-  border-top-width: 0 !important;
+  border-top: none !important;
 }
