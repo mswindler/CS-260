@@ -11,8 +11,8 @@
     
     <!-- FORM -->
     <div class="page-layout">
-      <input type="text" placeholder="Bootstrap Class" ng-model="formInput" size=60/>
-      <form class="{{formInput}}">
+      <input type="text" placeholder="Bootstrap Class" ng-init="formInput='form-control'" ng-model="formInput" size=60/>
+      <form>
         <legend>Personal information:</legend>
           <label for="text1">First name:</label>
         <input type="text" name="firstname" placeholder="John" class="{{formInput}}"><br>
