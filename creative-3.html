@@ -11,7 +11,7 @@
     
     <!-- FORM -->
     <div class="page-layout">
-      <input type="text" placeholder="Bootstrap Class" ng-init="formInput='form-control'" ng-model="formInput" size=60/>
+      <input class="form-control" type="text" placeholder="Bootstrap Class" ng-init="formInput='form-control'" ng-model="formInput" size=60/>
       <form>
         <legend>Personal information:</legend>
           <label for="text1">First name:</label>
@@ -24,8 +24,8 @@
     
     <!-- REORDER HTML -->
     <div class="page-layout right">
-        <input type="text" placeholder="Your Bootstrap class here..." ng-model="elementLayout" size=60 />
-        <input type="text" placeholder="Your Bootstrap img class here..." ng-model="imgClass" size=60 />
+        <input class="form-control" type="text" placeholder="Your Bootstrap class here..." ng-model="elementLayout" size=60 />
+        <input class="form-control" type="text" placeholder="Your Bootstrap img class here..." ng-model="imgClass" size=60 />
         <div class="{{elementLayout}}">
           <p>This is a paragraph</p>
           <h3>This is a heading</h3>
@@ -37,7 +37,7 @@
     
     <!-- TABLE -->
     <div class="page-layout">
-      <input type="text" placeholder="Your Bootstrap class here..." ng-init="tableInput='table'" ng-model="tableInput" size=60 />
+      <input class="form-control" type="text" placeholder="Your Bootstrap class here..." ng-init="tableInput='table'" ng-model="tableInput" size=60 />
       <table class="{{tableInput}}">
         <tr>
           <th>Firstname</th>
@@ -59,7 +59,7 @@
     
     <!-- NAV -->
     <div class="page-layout right">
-      <input type="text" placeholder="Your Bootstrap class here..." ng-init="navInput='navbar navbar-default'" ng-model="navInput" size=60 />
+      <input class="form-control" type="text" placeholder="Your Bootstrap class here..." ng-init="navInput='navbar navbar-default'" ng-model="navInput" size=60 />
       <nav class="{{navInput}}">
        <div class="container-fluid">
          <!-- Brand and toggle get grouped for better mobile display -->
