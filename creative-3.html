@@ -24,13 +24,15 @@
     
     <!-- REORDER HTML -->
     <div class="page-layout right">
-        <input class="form-control" type="text" placeholder="Your Bootstrap class here..." ng-model="elementLayout" size=60 />
+        <input class="form-control" type="text" placeholder="Your Bootstrap paragraph class here..." ng-model="elementLayout" size=60 />
+        <input class="form-control" type="text" placeholder="Your Bootstrap heading class here..." ng-model="elementLayout2" size=60 />
+        <input class="form-control" type="text" placeholder="Your Bootstrap input class here..." ng-model="elementLayout3" size=60 />
         <input class="form-control" type="text" placeholder="Your Bootstrap img class here..." ng-model="imgClass" size=60 />
-        <div class="{{elementLayout}}">
-          <p>This is a paragraph</p>
-          <h3>This is a heading</h3>
+        <div>
+          <p class="{{elementLayout}}">This is a paragraph</p>
+          <h3 class="{{elementLayout2}}">This is a heading</h3>
           <label for="sample-field">Single Line Text</label>
-          <input id="sample-field" type="text" value="I am sample text">
+          <input class="{{elementLayout3}}" id="sample-field" type="text" value="I am sample text">
           <img class="{{imgClass}}" src="https://vignette.wikia.nocookie.net/avatar/images/f/f0/Iroh%27s_lotus_tile.png/revision/latest/scale-to-width-down/200?cb=20140112225732" height=150 width=200>
         </div>
     </div>
