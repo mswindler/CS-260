@@ -26,3 +26,7 @@ header {
   margin: auto;
   background-color: #6D7993;
 }
+
+.ourTable {
+  border-top-width: 0 !important;
+}
