@@ -27,6 +27,6 @@ header {
   background-color: #6D7993;
 }
 
-.ourTable td {
+.ourTable td th {
   border-top: none !important;
 }
