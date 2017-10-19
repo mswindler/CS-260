@@ -4,11 +4,11 @@ body {
 
 .page-layout {
   display: inline-block;
-  width: 48%;
+  width: 50%;
   height: 480px;
   padding: 20px;
   border: 1px solid;
-  margin:10px;
+  margin:0px;
 }
 
 .right {
