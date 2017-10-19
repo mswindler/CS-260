@@ -13,14 +13,12 @@
     <div class="page-layout">
       <input type="text" placeholder="Bootstrap Class" ng-model="formInput" size=60/>
       <form class="{{formInput}}">
-        <div class="{{formInput}}">
         <legend>Personal information:</legend>
           <label for="text1">First name:</label>
-        <input type="text" name="firstname" placeholder="John"><br>
+        <input type="text" name="firstname" placeholder="John" class="{{formInput}}"><br>
           <label for="text2">Last name:</label>
-        <input id="text1" type="text" name="lastname" placeholder="Doe"><br><br>
+        <input id="text1" type="text" name="lastname" placeholder="Doe" class="{{formInput}}"><br><br>
         <input id="text2" type="submit" value="Submit">
-        </div>
       </form>
     </div>
     
