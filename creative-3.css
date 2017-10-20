@@ -29,7 +29,7 @@ header {
   background-color: #6D7993;
 }
 
-.bootstrapInfo h1, bootstrapInfo table {
+.bootstrapInfo h1, .bootstrapInfo table {
   color: #D5D5D5 !important;
 }
 
