@@ -24,10 +24,13 @@ header {
 }
 
 .bootstrapInfo {
-  color: #D5D5D5 !important;
   width: 90%;
   margin: auto;
   background-color: #6D7993;
+}
+
+.bootstrapInfo h1, bootstrapInfo table {
+  color: #D5D5D5 !important;
 }
 
 .ourTable tr th {
