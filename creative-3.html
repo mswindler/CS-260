@@ -45,6 +45,12 @@
       $(document).ready( function() {
         $(".tableButton").click( function() {
           $(".ourTable").toggleClass("hidden");
+          if ($(".tableButton").text() == "Show") {
+            $(".tableButton").text("Hide");
+          }
+          else if ($(".tableButton").text() == "Hide") {
+            $(".tableButton").text("Show");
+          }
         });
       });
       
