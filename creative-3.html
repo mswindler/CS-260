@@ -41,8 +41,17 @@
         </div>
     </div>
     
+    <script>
+      $(".tableButton").click( function() {
+        $(".ourTable).toggleClass("hidden");
+      });
+      
+    </script>
+    
     <!-- BOOTSTRAP CLASSES -->
     <div class="bootstrapInfo">
+      <button class="tableButton">Hide</button>
+      <h1>Suggested Bootstrap Classes</h1>
       <table class="table ourTable">
         <tr>
           <th>All</th>
